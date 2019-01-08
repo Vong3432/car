@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches|Source+Sans+Pro');
+
+*,::before,::after
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+*
+{
+    transition: all 500ms ease-in-out;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 1.6px;
+    font-weight: normal;
+}
+
+h1
+{
+    font-size: 4.5em;
+}
+
+a
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+p
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2em;    
+    line-height: 1.6;
+}
+
+.hero-container::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url('image/hero.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;  
+    background-color:rgba(0,0,0,0.6);
+    background-blend-mode: overlay;
+    max-width: 100%;    
+    width: 100%;    
+    min-height: 120vh; 
+    z-index: -1;
+}
+
+.hero-container
+{
+    /* background-color: rgb(45, 131, 230); */       
+    width: 100%;    
+    position: relative;    
+    min-height: 60vh;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;    
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    padding: 30vh 20px;        
+}
+
+.hero--selection
+{
+    margin-top: 5vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero--selection button
+{
+    max-width: 350px;
+    cursor: pointer;       
+    
+    margin: 10px;    
+    font-size: 1em;
+    outline: none;
+    border: none;
+    padding: 20px;
+    background-color: rgba(0, 153, 255);
+}
+
+.hero--selection button:hover
+{
+    transform: scale(1.1);
+    background-color: rgba(11, 100, 160);
+}
+
+.offer-section
+{
+    max-width: 100%;
+    width: auto;    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;    
+    min-height: 50vh;
+    height: auto;
+    background-color: #24252a;
+    position: relative;    
+    padding: 5vh;
+}
+
+.offer-section img
+{
+    box-shadow: 10px 0px 0px 0px rgba(255, 255, 255,1),
+                0px 0px 0px 0px rgba(255,255,255,1);
+    /* border: 15px solid white; 
+    border-radius: 15px;*/
+    max-width: 500px;
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+}
+
+.offer-section .offer--content
+{
+    padding: 50px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.offer-section .offer--content p
+{
+
+}
+
+.offer-section .offer--content h2
+{
+    font-size: 3em;
+}
+
+@media screen and (max-width:900px)
+{    
+    .hero--selection button
+    {
+        min-width: 300px;         
+        max-width: 700px;        
+        font-size: 0.8em;
+    }
+
+    .offer-section .offer--content
+    {
+        padding: 15px 0px;
+    }
+}
