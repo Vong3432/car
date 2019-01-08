@@ -73,7 +73,7 @@ p
     align-items: center;
     align-content: center;
     justify-items: center;
-    padding: 30vh 20px;        
+    padding: 30vh 5vh;        
 }
 
 .hero--selection
@@ -150,12 +150,21 @@ p
 }
 
 @media screen and (max-width:900px)
-{    
+{        
+
     .hero--selection button
-    {
-        min-width: 300px;         
-        max-width: 700px;        
+    {        
+        margin-left: 0;
+        margin-right: 0;
+        min-width: 270px;  
+        max-width: 270px;
+        width: 100%;      
         font-size: 0.8em;
+    }
+
+    .offer-section
+    {
+        
     }
 
     .offer-section .offer--content
